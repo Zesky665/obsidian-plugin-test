@@ -9,7 +9,7 @@ Create a  `docker-compose.yml` file with the following contents:
 ```
 services: # list of containers 
 	prefect_agent: # name of container
-		image: "zharec/prefect_agent:latest" # image container is based on
+		image: "zharec/prefect_agent:latest" # image the container is based on
 		env_file: # path to file with env values
 			- .env
 ```
