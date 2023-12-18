@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/garden/docker/docker-compose-basics/","tags":["Docker","Docker-Compose","gardenEntry"]}
+{"dg-publish":true,"permalink":"/garden/docker/docker-compose-basics/","tags":["Docker","Docker-Compose"]}
 ---
 
 ## 1. Create docker-compose file
