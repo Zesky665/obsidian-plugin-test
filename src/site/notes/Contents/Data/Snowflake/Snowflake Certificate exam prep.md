@@ -8,7 +8,7 @@ The Level UP courses from the Snowflake website:
 - [[Contents/Data/Snowflake/Snowflake - Backup and Recovery\|Snowflake - Backup and Recovery]]
 - [[Contents/Data/Snowflake/Snowflake - Key Concepts\|Snowflake - Key Concepts]]
 - Resource Monitoring
-- Data Loading
+- [[Contents/Data/Snowflake/Snowflake - Data Loading\|Snowflake - Data Loading]]
 - Container Hierarchy
 - Account and Assurance
 - Ecosystem
