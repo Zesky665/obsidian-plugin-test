@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/home-page/","tags":["Home","gardenEntry","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/contents/home-page/","tags":["Home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"]}
 ---
 
 My name is Zharko Cekovski and this is my digital garden. 
