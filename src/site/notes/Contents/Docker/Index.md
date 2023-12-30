@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/docker/index/","tags":["Docker","Docker-Compose"]}
+{"dg-publish":true,"permalink":"/contents/docker/index/","tags":["Docker","Docker-Compose"],"created":"2023-12-26T00:46:49.880+01:00","updated":"2023-12-28T12:02:27.311+01:00"}
 ---
 
 

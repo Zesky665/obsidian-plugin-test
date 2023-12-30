@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/process/work-process-document/","tags":["Process","Bugs","DoD","Teamwork","Team_Building"]}
+{"dg-publish":true,"permalink":"/contents/process/work-process-document/","tags":["Process","Bugs","DoD","Teamwork","Team_Building"],"created":"2023-12-18T17:08:15.102+01:00","updated":"2023-12-18T17:17:37.697+01:00"}
 ---
 
 
