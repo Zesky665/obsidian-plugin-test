@@ -49,14 +49,14 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
             <div class="tooltip">
               <i icon-name="calendar-plus"></i>
               <span class="human-date" data-date="{{created}}"></span>
-              <span class="tooltip-text">Date Created</span>
+              <span class="tooltiptext">Date Created</span>
             </div>
             {%- endif -%}
             {%- if meta.timestampSettings.showUpdated and updated -%}
             <div class="tooltip">
               <i icon-name="calendar-clock"></i>
               <span class="human-date" data-date="{{updated}}"></span>
-              <span class="tooltip-text">Date Last Updated</span>
+              <span class="tooltiptext">Date Last Updated</span>
             </div>
             {%- endif -%}
           </div>
