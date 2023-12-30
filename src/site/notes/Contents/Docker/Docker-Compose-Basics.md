@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/docker/docker-compose-basics/","tags":["Docker","Docker-Compose"]}
+{"dg-publish":true,"permalink":"/contents/docker/docker-compose-basics/","tags":["Docker","Docker-Compose"],"created":"2023-12-16T21:56:46.740+01:00","updated":"2023-12-18T16:37:03.842+01:00"}
 ---
 
 ## 1. Create docker-compose file
