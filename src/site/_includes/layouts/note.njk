@@ -15,7 +15,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {{meta.bodyClasses}}">
     {%include "components/notegrowthhistory.njk"%}
-    
+
     {% if settings.dgShowFileTree !== true %}
       {%include "components/navbar.njk"%}
     {%else%}
@@ -46,10 +46,18 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
           {%- if meta.timestampSettings.showCreated or meta.timestampSettings.showUpdated -%}
           <div class="timestamps">
             {%- if meta.timestampSettings.showCreated and created -%}
-            <div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="{{created}}"></span></div>
+            <div class="tooltip">
+              <i icon-name="calendar-plus"></i>
+              <span class="human-date" data-date="{{created}}"></span>
+              <span class="tooltip-text">Date Created</span>
+            </div>
             {%- endif -%}
             {%- if meta.timestampSettings.showUpdated and updated -%}
-            <div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="{{updated}}"></span></div>
+            <div class="tooltip">
+              <i icon-name="calendar-clock"></i>
+              <span class="human-date" data-date="{{updated}}"></span>
+              <span class="tooltip-text">Date Last Updated</span>
+            </div>
             {%- endif -%}
           </div>
           {%- endif -%}
