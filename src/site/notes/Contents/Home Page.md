@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/home-page/","tags":["Home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"created":"2023-12-16T22:00:00.564+01:00","updated":"2023-12-26T00:40:40.878+01:00"}
+{"dg-publish":true,"permalink":"/contents/home-page/","tags":["Home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"created":"2023-12-16T22:00:00.564+01:00","updated":"2023-12-26T00:40:40.878+01:00"}
 ---
 
 My name is Zharko Cekovski and this is my digital garden. 
