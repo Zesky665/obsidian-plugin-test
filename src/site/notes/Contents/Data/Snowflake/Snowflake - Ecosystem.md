@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-ecosystem/","tags":["Snowflake"],"created":"2024-01-04T18:04:37.698+01:00","updated":"2024-01-04T20:10:53.475+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-ecosystem/","tags":["Snowflake"],"created":"2024-01-04T18:04:37.698+01:00","updated":"2024-01-05T13:14:59.265+01:00"}
 ---
 
 
