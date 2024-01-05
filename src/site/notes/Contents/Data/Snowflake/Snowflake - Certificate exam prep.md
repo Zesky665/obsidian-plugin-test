@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-certificate-exam-prep/","tags":["Snowflake","Certificate"],"created":"2023-12-28T23:59:15.920+01:00","updated":"2024-01-04T20:11:09.368+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-certificate-exam-prep/","tags":["Snowflake","Certificate"],"created":"2023-12-28T23:59:15.920+01:00","updated":"2024-01-05T13:15:20.609+01:00"}
 ---
 
 These are all the resources I've used to prepare for the Snowflake Certificate:
