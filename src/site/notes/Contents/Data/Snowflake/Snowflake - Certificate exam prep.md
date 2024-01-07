@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-certificate-exam-prep/","tags":["Snowflake","Certificate"],"created":"2023-12-28T23:59:15.920+01:00","updated":"2024-01-05T13:15:20.609+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-certificate-exam-prep/","tags":["Snowflake","Certificate"],"created":"2023-12-28T23:59:15.920+01:00","updated":"2024-01-05T16:21:46.023+01:00"}
 ---
 
 These are all the resources I've used to prepare for the Snowflake Certificate:
@@ -14,4 +14,4 @@ The Level UP courses from the Snowflake website:
 - [[Contents/Data/Snowflake/Snowflake - Query & Results History\|Snowflake - Query & Results History]]
 - [[Contents/Data/Snowflake/Snowflake - Account Options & Assurances\|Snowflake - Account Options & Assurances]]
 - [[Contents/Data/Snowflake/Snowflake - Ecosystem\|Snowflake - Ecosystem]]
-- Practice exam
+- [[Contents/Data/Snowflake/Snowflake - Final Exam\|Snowflake - Final Exam]]
