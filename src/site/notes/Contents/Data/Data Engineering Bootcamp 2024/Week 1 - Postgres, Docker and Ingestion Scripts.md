@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:29:09.500+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:44:23.101+01:00"}
 ---
 
 
@@ -310,6 +310,8 @@ print("Finished ingesting data into the postgres database, it took %.3f seconds"
 ```
 
 To run this script we need automatically we can put it inside of it's own custom docker container and set it up to run right after the database boots up. 
+
+If you want to see how to analyze the dataset check out [this jupyter notebook ](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/a9f32cee1c55d746b97f649e09c78e64f886bfe6/week_1_basics_n_setup/2_docker_sql/data-loading-parquet.ipynb)by `thebadcoder96`.
 
 To do that we need to add this to the `docker-compose.yml` file.
 
