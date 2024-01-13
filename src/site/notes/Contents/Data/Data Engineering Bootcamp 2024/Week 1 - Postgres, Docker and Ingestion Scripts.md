@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:24:54.520+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:29:09.500+01:00"}
 ---
 
 
@@ -9,8 +9,7 @@ PostgreSQL often referred to as Postgres is an enterprise-class open source rela
 It's used for basically everything that a database can be used for from simple transactions, to analytics to geospatial data. 
 
 Here's a very good TLDR: 
-![What is Postgres](https://www.youtube.com/watch?v=n2Fluyr3lbc&ab_channel=Fireship)
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/n2Fluyr3lbc?si=cffVYWSbivn9G3ZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ## What is Docker? 
 
 Docker is a containerization app, containerization is a type of virtual machine similar to [VMWare](https://www.ibm.com/topics/vmware#:~:text=Simply%20put%2C%20VMware%20develops%20virtualization,called%20virtual%20machines%20(VMs).). 
@@ -23,7 +22,8 @@ The difference is that instead of creating an entirely separate virtualized comp
 
 
 
-Here's another very good TLDR: ![What is Docker](https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship)
+Here's another very good TLDR: 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gjnup-PuquQ?si=RbyhX3dGEV46rya5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## Let's ingest some data
