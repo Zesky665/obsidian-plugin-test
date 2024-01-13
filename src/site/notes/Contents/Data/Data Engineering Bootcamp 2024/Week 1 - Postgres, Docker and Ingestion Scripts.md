@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:20:49.007+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:24:54.520+01:00"}
 ---
 
 
@@ -14,10 +14,13 @@ Here's a very good TLDR:
 ## What is Docker? 
 
 Docker is a containerization app, containerization is a type of virtual machine similar to [VMWare](https://www.ibm.com/topics/vmware#:~:text=Simply%20put%2C%20VMware%20develops%20virtualization,called%20virtual%20machines%20(VMs).). 
+
 The difference is that instead of creating an entirely separate virtualized computer docker  creates lightweight container containing all the needed software to run an app on top of an existing OS. This means that the container doesn't need to simulate/virtualize an entire operating system, which make it a lot faster and less resource intensive. 
+
 
 ![Docker Architecture](https://www.docker.com/wp-content/uploads/2021/11/docker-containerized-appliction-blue-border_2.png)
 				[_What is a container?_. Docker. (2023, October 26).](https://www.docker.com/resources/what-container/)
+
 
 
 Here's another very good TLDR: ![What is Docker](https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship)
@@ -50,7 +53,7 @@ services:
 
 		image: postgres:13 # The docker image used to create the database
 
-		environment: # Environmental variables set inside fo the container
+		environment: # Environmental variables set inside fo the container.
 
 			- POSTGRES_USER=db-user # These 
 
@@ -58,7 +61,7 @@ services:
 
 			- POSTGRES_DB=db-name # Optional
 
-		volumes: # This is were the container connects to the local machine
+		volumes: # This is were the container connects to the local machine.
 
 			- ./data:/var/lib/postgresql/data 
 			# this stores the database on the local machine enabling data to                 
@@ -70,9 +73,9 @@ services:
 
 		ports:
 
-			- "5433:5432" # Allows to map the containers 5433 port to the locals 5432 port
+			- "5433:5432" # Allows to map the containers 5433 port to the locals 5432 port.
 
-		healthcheck: # Used to determine when the container is up and running
+		healthcheck: # Used to determine when the container is up and running.
 
 			test: ["CMD-SHELL", "pg_isready -d db-name -U db-user"]
 
@@ -84,12 +87,12 @@ services:
 
   
 	pgadmin:
-	# This is a GUI for postgres
+	# This is a GUI for postgres.
 
 		image: dpage/pgadmin4
 
 		environment:
-			# Use these to log it to pgAdmin
+			# Use these to log it to pgAdmin.
 			- PGADMIN_DEFAULT_EMAIL=admin@admin.com
 
 			- PGADMIN_DEFAULT_PASSWORD=root
@@ -104,7 +107,7 @@ services:
 
 			condition: service_healthy
 			# This container will only start setting up after the database is             
-			# up and running
+			# up and running.
 ```
 
 To run this simple navigate to the directory hosting the `docker-compose.yml` file and run the following command.
@@ -163,42 +166,42 @@ import psycopg2
 
 #################################################
 
-### SECTION 1: Setup and Download the Dataset ###
+### SECTION 1: Setup and Download the Dataset. ###
 
 #################################################
 
 
-# Create the directory if it doesn't exist
+# Create the directory if it doesn't exist.
 os.makedirs("ny_taxi", exist_ok=True)
 
-# URL of the dataset
+# URL of the dataset.
 url = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet"
 
-# Download the dataset
+# Download the dataset.
 urllib.request.urlretrieve(url, "ny_taxi/yellow_tripdata_2023-01.parquet")
 
 print("Dataset downloaded successfully!")
   
 
-###################################
+####################################
 
-### SECTION 2: Load the dataset ###
+### SECTION 2: Load the dataset. ###
 
-###################################
+####################################
 
 
-# Read the parquet file
+# Read the parquet file.
 parquet_file = pq.ParquetFile("ny_taxi/yellow_tripdata_2023-01.parquet")
 
 
-################################################
+#################################################
 
-### SECTION 3: Setup the database connection ###
+### SECTION 3: Setup the database connection. ###
 
-################################################
+#################################################
   
 
-# Connect to database
+# Connect to database.
 conn = psycopg2.connect(
 
 	host="pgdatabase",
@@ -210,19 +213,19 @@ conn = psycopg2.connect(
 )
   
 
-# Use existing psycopg2 connection to create engine
+# Use existing psycopg2 connection to create engine.
 engine = create_engine('postgresql+psycopg2://', creator=lambda: conn)
 
   
 
 ####################################################
 
-### SECTION 4: Ingest the dataset into postgres ###
+### SECTION 4: Ingest the dataset into postgres. ###
 
 ####################################################
 
   
-# The columns we want to extract from the parquet file
+# The columns we want to extract from the parquet file.
 needed_columns = [
 
 	"VendorID",
@@ -242,7 +245,7 @@ needed_columns = [
 ]
 
 
-# Start total ingestion time timer
+# Start total ingestion time timer.
 t_start = time()
 
   
@@ -253,14 +256,14 @@ t_start = time()
 # Large files will crash the process.
 for batch in parquet_file.iter_batches(batch_size=100000, columns=needed_columns):
 
-	# Start batch timer
+	# Start batch timer.
 	b_start = time()
 	
 	
 	batch_df = batch.to_pandas()
 	
 	  
-	# Rename columns
+	# Rename columns.
 	new_column_names = {
 	
 		"VendorID": "vendor_id",
@@ -276,11 +279,11 @@ for batch in parquet_file.iter_batches(batch_size=100000, columns=needed_columns
 	batch_df = batch_df.rename(columns=new_column_names)
 
 
-	# Drop rows with missing values
+	# Drop rows with missing values.
 	df = batch_df.dropna()
 	
 	
-	# Drop rows with invalid values
+	# Drop rows with invalid values.
 	df = df[df['pickup_datetime'].dt.year == 2023]
 	df = df[df['dropoff_datetime'].dt.year == 2023]
 
@@ -293,14 +296,14 @@ for batch in parquet_file.iter_batches(batch_size=100000, columns=needed_columns
 	# Ingest the data to the database, replace if they exist.
 	df.to_sql(name='ny_yellow_taxi', schema="de_zoom_camp", con=conn, if_exists='append', index=False)
 	
-	# End batch timer
+	# End batch timer.
 	b_end = time()
 	
 	print('inserted another chunk, took %.3f second' % (b_end - b_start))
 
   
 
-# End total ingestion time
+# End total ingestion time.
 t_end = time()
 
 print("Finished ingesting data into the postgres database, it took %.3f seconds" % (t_end - t_start))
@@ -342,32 +345,32 @@ ingestion_script:
 The `Dockerfile` should look something like this:
 
 ```
-# Use an official Python runtime as the base image
+# Use an official Python runtime as the base image.
 FROM python:3.9-slim
 
   
 
-# Set the working directory in the container
+# Set the working directory in the container.
 WORKDIR /app
 
   
 
-# Copy the requirements file into the container
+# Copy the requirements file into the container.
 COPY requirements.txt .
 
   
 
-# Install the Python dependencies
+# Install the Python dependencies.
 RUN pip install --no-cache-dir -r requirements.txt
 
   
 
-# Copy the Python script into the container
+# Copy the Python script into the container.
 COPY data_ingestion.py .
 
   
 
-# Set the command to run the Python script when the container starts
+# Set the command to run the Python script when the container starts.
 CMD ["python", "data_ingestion.py"]
 ```
 
