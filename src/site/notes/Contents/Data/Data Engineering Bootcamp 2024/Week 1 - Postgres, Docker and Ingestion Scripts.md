@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:07:13.474+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:11:29.812+01:00"}
 ---
 
 
@@ -141,6 +141,8 @@ Of course we can do this is the PgAdmin manually, but there is a better way. We 
 
 #### The Ingestion Script
 Now that we have a database we have someplace to put the data, we can start working on the ingestion script. 
+
+For a cheatsheet on running scripts with docker, see [[Contents/Docker/Running Scripts in Docker\|Running Scripts in Docker]]
 
 Let's create a script that will be able to download the `ny_taxi` data, read it, clean it and load it into the database. This process is often referred to as an ETL (Extract, Transform, Load) pipeline.
 
