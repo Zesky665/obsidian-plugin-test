@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:11:29.812+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:20:49.007+01:00"}
 ---
 
 
@@ -45,7 +45,8 @@ version: '1'
 services: 
 
 	pgdatabase: 
-	# The name of the database, this is used as the host when connecting to the      # database from other docker containers or the local machine. 
+	# The name of the database, this is used as the host when connecting to the 
+    # database from other docker containers or the local machine. 
 
 		image: postgres:13 # The docker image used to create the database
 
@@ -60,10 +61,12 @@ services:
 		volumes: # This is were the container connects to the local machine
 
 			- ./data:/var/lib/postgresql/data 
-			# this stores the database on the local machine enabling data to                 # persist between runs.
+			# this stores the database on the local machine enabling data to                 
+			# persist between runs.
 
 			- ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
-			# This allows the user to run SQL scripts on startup by putting the              # script in a /sql directory at the root of the repo.
+			# This allows the user to run SQL scripts on startup by putting the              
+			# script in a /sql directory at the root of the repo.
 
 		ports:
 
@@ -100,7 +103,8 @@ services:
 			pgdatabase:
 
 			condition: service_healthy
-			# This container will only start setting up after the database is up             # and running
+			# This container will only start setting up after the database is             
+			# up and running
 ```
 
 To run this simple navigate to the directory hosting the `docker-compose.yml` file and run the following command.
@@ -242,8 +246,11 @@ needed_columns = [
 t_start = time()
 
   
-# Ingest the data to the database a chunk at a time
-# If we don't do this we can overload the ram and crash the script if the dataset is too big to fit into out available ram.
+# Ingest the data to the database a chunk at a time.
+
+# Otherwise the whole file will be loaded into memory.
+
+# Large files will crash the process.
 for batch in parquet_file.iter_batches(batch_size=100000, columns=needed_columns):
 
 	# Start batch timer
@@ -283,7 +290,7 @@ for batch in parquet_file.iter_batches(batch_size=100000, columns=needed_columns
 
 	with engine.begin() as conn:
 	
-	# Ingest the data to the database, overwrite the records if they already         # exist
+	# Ingest the data to the database, replace if they exist.
 	df.to_sql(name='ny_yellow_taxi', schema="de_zoom_camp", con=conn, if_exists='append', index=False)
 	
 	# End batch timer
