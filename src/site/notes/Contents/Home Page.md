@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/home-page/","tags":["Home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"created":"2023-12-16T22:00:00.564+01:00","updated":"2023-12-26T00:40:40.878+01:00"}
+{"dg-publish":true,"permalink":"/contents/home-page/","tags":["Home","gardenEntry"],"created":"2023-12-16T22:00:00.564+01:00","updated":"2024-01-13T02:09:23.443+01:00"}
 ---
 
 My name is Zharko Cekovski and this is my digital garden. 
@@ -11,7 +11,7 @@ Mine is powered by [Obsidian](https://obsidian.md/) and hosted on [Vercel](https
 
 ### Who are you exactly?
 I am a Data Engineering Consultant, I'm been helping clients with their data pipelines for the past 2 years. 
-On a personal note, I live in Skopje and I like DnD and long walks by the river. 
+On a personal note, I live in Skopje, I like DnD and long walks by the river. 
 
 ### Can you help me with [X]?
 Probably, feel free to [email](zharkoc@zharconsulting.com) me or set up a meeting in [calendly](https://calendly.com/zharkoc/30min). 
