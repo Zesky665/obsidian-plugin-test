@@ -1,13 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/contents/process/work-process-document/","tags":["Process","Bugs","DoD","Teamwork","Team_Building"],"created":"2023-12-18T17:08:15.102+01:00","updated":"2023-12-18T17:17:37.697+01:00"}
+{"dg-publish":true,"permalink":"/contents/process/work-process-document/","tags":["Process","Bugs","DoD","Teamwork","Team_Building"],"created":"2023-12-18T17:08:15.102+01:00","updated":"2024-01-08T12:54:51.065+01:00"}
 ---
 
 
 
-Work process document or Definition of Done is a document developed by a team which lays out the agreed upon terms within that team. 
-Having a DoD document is important for team building and for maintaining team cohesion in high turnover times. 
 
-Below is an example of a DoD document I wrote while working in pervious job
+Work process document or Definition of Done is a document developed by a team which lays out the agreed upon terms within that team. 
+
+Having a DoD document is important for team building and for maintaining team cohesion in times of high turnover.
+
+Below is an example of a DoD document I wrote while working in previous job
 
 __________________________________________________________
 
