@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-terraform-and-snowflake/","tags":["DE_ZOOMCAMP_2024","Snowflake","Data_Loading","Terraform","IaC"],"created":"2024-01-31T23:54:39.765+01:00","updated":"2024-02-08T01:36:14.824+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-terraform-and-snowflake/","tags":["DE_ZOOMCAMP_2024","Snowflake","Data_Loading","Terraform","IaC"],"created":"2024-01-31T23:54:39.765+01:00","updated":"2024-02-08T20:02:50.136+01:00"}
 ---
 
 
@@ -10,6 +10,7 @@ It does the same thing that something like an aws cdk script would do (creating,
 
 Here's a very good TLDR:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tomUWcQ0P3k?si=cOzAcTGnP4bgfV9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## What is Snowflake?
 
 Snowflake is cloud based data warehousing platform, similar in concept to Google's BigQuery and AWS Redshift. It's differentiated by being able to integrate with data stores across all of the major cloud platforms and having a very versatile architecture. 
@@ -18,6 +19,7 @@ Snowflake databases are virtual hard drives where the user stores data, while Sn
 
 Here's a very good TLDR (sadly Fireship hasn't covered it 😢 ... yet!):
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9PBvVeCQi0w?si=bZ7oBc-3z_P6G95-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## Let's set up a Data Warehouse
 
