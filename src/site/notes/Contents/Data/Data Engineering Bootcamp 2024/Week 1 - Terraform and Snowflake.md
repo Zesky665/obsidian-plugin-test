@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-terraform-and-snowflake/","tags":["DE_ZOOMCAMP_2024","Snowflake","Data_Loading","Terraform","IaC"],"created":"2024-01-31T23:54:39.765+01:00","updated":"2024-02-08T20:02:50.136+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-terraform-and-snowflake/","tags":["DE_ZOOMCAMP_2024","Snowflake","Data_Loading","Terraform","IaC"],"created":"2024-01-31T23:54:39.765+01:00","updated":"2024-02-16T21:24:34.834+01:00"}
 ---
 
 
@@ -233,3 +233,7 @@ After this command runs it course, go to the Snowflake console you will be able 
 #### The full code
 
 The full code is available [here](https://github.com/Zesky665/de-zoomcamp/blob/feature/terraform/Week_1/terraform/main.tf).
+
+### Next
+
+[[Contents/Data/Data Engineering Bootcamp 2024/Week 2 - Ingesting Data with Mage\|Week 2 - Ingesting Data with Mage]]
