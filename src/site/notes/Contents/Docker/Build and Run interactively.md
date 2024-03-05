@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/docker/build-and-run-interactively/","tags":["Docker","Docker-Compose"],"created":"2023-12-18T16:45:28.206+01:00","updated":"2023-12-18T16:45:43.562+01:00"}
+{"dg-publish":true,"permalink":"/contents/docker/build-and-run-interactively/","tags":["Docker","Docker-Compose"],"created":"2024-02-29T00:08:23.435+01:00","updated":"2024-02-29T00:08:23.435+01:00"}
 ---
 
 
