@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-final-exam/","tags":["Snowflake","Exam","Practice"],"created":"2024-01-05T16:21:08.453+01:00","updated":"2024-01-07T01:22:48.362+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-final-exam/","tags":["Snowflake","Exam","Practice"],"created":"2024-02-29T00:08:23.434+01:00","updated":"2024-02-29T00:08:23.434+01:00"}
 ---
 
 ## Exam Questions
