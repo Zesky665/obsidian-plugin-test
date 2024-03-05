@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-02-08T21:08:35.900+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-02-29T00:08:23.432+01:00","updated":"2024-02-29T00:08:23.432+01:00"}
 ---
 
 
