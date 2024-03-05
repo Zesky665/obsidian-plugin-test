@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-2-ingesting-data-with-mage/","tags":["Snowflake","Mage","AI","DE_ZOOMCAMP_2024","Data_Loading","Docker-Compose","Docker","Python","Week_2","yaml"],"created":"2024-02-09T11:08:02.851+01:00","updated":"2024-02-16T21:28:35.349+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-2-ingesting-data-with-mage/","tags":["Snowflake","Mage","AI","DE_ZOOMCAMP_2024","Data_Loading","Docker-Compose","Docker","Python","Week_2","yaml"],"created":"2024-02-29T00:08:23.433+01:00","updated":"2024-02-29T00:08:23.433+01:00"}
 ---
 
 
