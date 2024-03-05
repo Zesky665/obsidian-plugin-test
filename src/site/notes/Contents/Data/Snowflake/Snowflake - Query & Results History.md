@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-query-and-results-history/","tags":["Snowflake","SQL","History"],"created":"2024-01-03T16:14:01.372+01:00","updated":"2024-01-03T17:30:25.535+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-query-and-results-history/","tags":["Snowflake","SQL","History"],"created":"2024-02-29T00:08:23.434+01:00","updated":"2024-02-29T00:08:23.435+01:00"}
 ---
 
 
