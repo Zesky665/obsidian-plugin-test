@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-auto-stop-script-for-sage-maker-apps-with-terraform/","tags":["AI","AI/ML","AWS","MLOps","SageMaker"],"created":"2024-03-05T22:27:40.714+01:00","updated":"2024-03-26T18:09:31.342+01:00"}
+{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-auto-stop-script-for-sage-maker-apps-with-terraform/","tags":["AI","AI/ML","AWS","MLOps","SageMaker"],"created":"2024-03-05T22:27:40.714+01:00","updated":"2024-03-26T18:14:13.603+01:00"}
 ---
 
 
 ### Why is this necessary?
 
-Because the types of instances Data Scientists usually work with like `ml.g4dn.2xlarge` cost \$1.175. If they accidentally leave it on after their done with their days work, this can result in an extra 19\$ per day. Per month this can add up to 564\$. If the team consists of more than one data scientists the costs can grow even more. An team of for example 4 data scientists regularly failing to turn off their instances would result in upwards of 2256\$ of extra costs per month. 
+Because the types of instances Data Scientists usually work with like `ml.g4dn.2xlarge` cost \$1.175 per hour. If they accidentally leave it on after their done with their days work, this can result in an extra 19\$ per day. Per month this can add up to 564\$. If the team consists of more than one data scientists the costs can grow even more. An team of for example 4 data scientists regularly failing to turn off their instances would result in upwards of 2256\$ of extra costs per month. 
 
 Of course, turning off the instances is the responsibility of the person using it, but people are fallible and they hopefully have better things to devote their brainpower to than remembering to turn off an instance. 
 
@@ -231,3 +231,9 @@ aws lambda invoke \
     response.json
 ```
 
+________
+
+You might be interested in these notes:
+- [Setting up AWS Sagemaker](https://www.zharconsulting.com/contents/ai/sage-maker/setting-up-aws-sage-maker-with-terraform/)
+- [Setting up Training Pipelines in AWS SageMaker]() (coming soon)
+- [Setting up Data Quality Tests with Lambda]()(coming soon)
