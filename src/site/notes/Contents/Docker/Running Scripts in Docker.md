@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/docker/running-scripts-in-docker/","tags":["Docker","Docker-Compose","Scripts"],"created":"2023-12-18T16:36:05.021+01:00","updated":"2023-12-18T16:37:34.407+01:00"}
+{"dg-publish":true,"permalink":"/contents/docker/running-scripts-in-docker/","tags":["Docker","Docker-Compose","Scripts"],"created":"2024-02-29T00:08:23.435+01:00","updated":"2024-02-29T00:08:23.435+01:00"}
 ---
 
 

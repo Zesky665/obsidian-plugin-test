@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-01-12T22:38:35.775+01:00","updated":"2024-01-13T02:44:23.101+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/data-engineering-bootcamp-2024/week-1-postgres-docker-and-ingestion-scripts/","tags":["Docker","Docker-Compose","Python","Postgres","PgAdmin","Scripts","DE_ZOOMCAMP_2024","Week_1"],"created":"2024-02-29T00:08:23.432+01:00","updated":"2024-02-29T00:08:23.432+01:00"}
 ---
 
 
@@ -40,7 +40,7 @@ Make sure you have [docker-desktop](https://www.docker.com/products/docker-deskt
 #### Postgres & PgAdmin Setup
 
 The `docker-compose.yml` file should placed in the root of the repo and it should look like this:
-```
+```YAML
 version: '1'
 ##########################################################################
 # If you decide to use this, make sure to remove all the comments first. # 
@@ -123,7 +123,7 @@ Once everything is up you should be able to visit [localhost:8888](localhost:888
 ##### Creating the Schema and Table
 
 In order to create the schema and table we need to run the following SQL on the Database.
-```
+```SQL
 CREATE SCHEMA IF NOT EXISTS de_zoom_camp;
 
 CREATE TABLE de_zoom_camp.ny_yellow_taxi (
@@ -154,7 +154,7 @@ For a cheatsheet on running scripts with docker, see [[Contents/Docker/Running S
 Let's create a script that will be able to download the `ny_taxi` data, read it, clean it and load it into the database. This process is often referred to as an ETL (Extract, Transform, Load) pipeline.
 
 Here's the script that I came up with.
-```
+```python
 import os
 from time import time
 import urllib.request
@@ -315,7 +315,7 @@ If you want to see how to analyze the dataset check out [this jupyter notebook ]
 
 To do that we need to add this to the `docker-compose.yml` file.
 
-```
+```yaml
 ingestion_script:
 
 	build: .
@@ -335,7 +335,7 @@ This will build a local dockerfile and run it as a container, it will also creat
 
 The dockerfile for the script is just a file named `Dockerfile` in the same directory as the `docker-compose.yml`. It doesn't need to be named `Dockerfile` to be a dockerfile, it can be named `Dockerfile_Ingest_Script` instead, but then instead of `build .` the docker-compose service would have to refer to a `dockerfile-ingest-script` file like this.
 
-```
+```YAML
 ingestion_script:
 
 	build:
@@ -346,7 +346,7 @@ ingestion_script:
 
 The `Dockerfile` should look something like this:
 
-```
+```Dockerfile
 # Use an official Python runtime as the base image.
 FROM python:3.9-slim
 
@@ -380,7 +380,7 @@ One of the cool things about docker images is that you can preinstall software o
 In this dockerfile this is accomplished by basing it on a docker images with python already installed and copying and then running a requirements.txt file to install all of our packaged. 
 
 The requirements.txt file contains all of the packages needed to run the script, which are:
-```
+```python
 pandas==2.1.4
 psycopg2-binary==2.9.9
 pyarrow==14.0.2
@@ -388,12 +388,12 @@ SQLAlchemy==2.0.25
 ```
 
 Not that everything is set up, let's build the image:
-```
+```Shell
 docker-compose build
 ```
 
 Once that is done the script is ready to run.
-```
+```Shell
 docker-compose up
 ```
 
@@ -402,7 +402,7 @@ In the terminal you can see how long it takes to load all of the data. For me it
 Now that the data has been loaded, you can go to the PgAdmin console and check out the dataset. 
 
 To check if the dataset loaded correctly you can run a simple select sql script, like this:
-```
+```SQL
 SELECT * FROM de_zoom_camp.ny_yellow_taxi;
 ```
 
@@ -412,3 +412,7 @@ The results should look like this, there should be `8983146` rows.
 #### The full code
 
 The full code is available [here](https://github.com/Zesky665/de-zoomcamp/tree/feature/docker/Week_1).
+
+### Next
+
+[[Contents/Data/Data Engineering Bootcamp 2024/Week 1 - Terraform and Snowflake\|Week 1 - Terraform and Snowflake]]

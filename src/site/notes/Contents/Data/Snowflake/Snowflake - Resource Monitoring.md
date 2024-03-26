@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-resource-monitoring/","tags":["Snowflake","Monitoring"],"created":"2023-12-29T13:44:24.241+01:00","updated":"2023-12-29T14:47:39.793+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-resource-monitoring/","tags":["Snowflake","Monitoring"],"created":"2024-02-29T00:08:23.435+01:00","updated":"2024-02-29T00:08:23.435+01:00"}
 ---
 
 

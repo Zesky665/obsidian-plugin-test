@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-data-loading/","tags":["Snowflake","Data_Loading","SQL"],"created":"2023-12-29T12:35:59.889+01:00","updated":"2023-12-29T13:18:56.700+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-data-loading/","tags":["Snowflake","Data_Loading","SQL"],"created":"2024-02-29T00:08:23.434+01:00","updated":"2024-02-29T00:08:23.434+01:00"}
 ---
 
 

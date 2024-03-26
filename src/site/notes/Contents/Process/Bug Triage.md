@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/process/bug-triage/","tags":["QA","Bugs","Triage","Process"],"created":"2023-12-18T17:04:55.365+01:00","updated":"2023-12-18T17:34:12.192+01:00"}
+{"dg-publish":true,"permalink":"/contents/process/bug-triage/","tags":["QA","Bugs","Triage","Process"],"created":"2024-02-29T00:08:23.436+01:00","updated":"2024-02-29T00:08:23.436+01:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-account-options-and-assurances/","tags":["Snowflake"],"created":"2024-01-04T16:09:35.565+01:00","updated":"2024-01-04T18:03:58.815+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-account-options-and-assurances/","tags":["Snowflake"],"created":"2024-02-29T00:08:23.433+01:00","updated":"2024-02-29T00:08:23.433+01:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-key-concepts/","tags":["Snowflake"],"created":"2023-12-28T23:56:22.525+01:00","updated":"2023-12-28T23:58:49.011+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-key-concepts/","tags":["Snowflake"],"created":"2024-02-29T00:08:23.434+01:00","updated":"2024-02-29T00:08:23.434+01:00"}
 ---
 
 
