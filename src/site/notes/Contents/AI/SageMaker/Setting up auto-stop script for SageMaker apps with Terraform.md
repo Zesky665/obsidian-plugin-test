@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-auto-stop-script-for-sage-maker-apps-with-terraform/","tags":["AI","AI/ML","AWS","MLOps","SageMaker"],"created":"2024-03-05T22:27:40.714+01:00","updated":"2024-03-26T17:45:38.342+01:00"}
+{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-auto-stop-script-for-sage-maker-apps-with-terraform/","tags":["AI","AI/ML","AWS","MLOps","SageMaker"],"created":"2024-03-05T22:27:40.714+01:00","updated":"2024-03-26T18:09:31.342+01:00"}
 ---
 
 
@@ -125,7 +125,6 @@ This script can easily be set to run periodically inside of a job orchestrator l
 
 Lambda is a service offered by AWS, which when given a code/image will provision a server, run the code and delete itself down once the function exits. This is called serverless computing. 
 The user can specify the size and maximum run duration of the lambda. As well as things like runtime and which files it should run from. Alternatively it can also take a docker image hosted on ecr. 
-Each lambda runs independently from each other, meaning multiple lambdas of the same type can run at the same time.  
 
 The user is only charged for the time the lambda runs, including 1 million requests and 400k of compute(seconds) as a free tier. 
 
