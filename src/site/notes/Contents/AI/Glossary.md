@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/ai/glossary/","tags":["Glossary","AI/ML","MLOps"],"created":"2024-02-29T00:08:23.432+01:00","updated":"2024-02-29T00:08:23.432+01:00"}
+{"dg-publish":true,"permalink":"/contents/ai/glossary/","tags":["Glossary","AI/ML","MLOps"],"created":"2024-06-07T17:41:41.641+02:00","updated":"2024-06-07T17:41:41.641+02:00"}
 ---
 
 
