@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-context/","tags":["Snowflake","SQL"],"created":"2024-02-29T00:08:23.434+01:00","updated":"2024-02-29T00:08:23.434+01:00"}
+{"dg-publish":true,"permalink":"/contents/data/snowflake/snowflake-context/","tags":["Snowflake","SQL"],"created":"2024-06-07T17:41:41.643+02:00","updated":"2024-06-07T17:41:41.643+02:00"}
 ---
 
 ## Guidance Questions
