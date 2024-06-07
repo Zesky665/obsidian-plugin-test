@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/docker/push-dockerfile-to-dockerhub/","tags":["Docker","Docker-Compose"],"created":"2024-02-29T00:08:23.435+01:00","updated":"2024-02-29T00:08:23.435+01:00"}
+{"dg-publish":true,"permalink":"/contents/docker/push-dockerfile-to-dockerhub/","tags":["Docker","Docker-Compose"],"created":"2024-06-07T17:41:41.644+02:00","updated":"2024-06-07T17:41:41.644+02:00"}
 ---
 
 
