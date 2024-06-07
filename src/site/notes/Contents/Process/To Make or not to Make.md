@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/process/to-make-or-not-to-make/","tags":["Process","Scripts"],"created":"2024-02-29T21:08:22.724+01:00","updated":"2024-03-05T22:06:52.663+01:00"}
+{"dg-publish":true,"permalink":"/contents/process/to-make-or-not-to-make/","tags":["Process","Scripts"],"created":"2024-06-07T17:41:41.644+02:00","updated":"2024-06-07T17:41:41.644+02:00"}
 ---
 
 
