@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-auto-stop-script-for-sage-maker-apps-with-terraform/","tags":["AI","AI/ML","AWS","MLOps","SageMaker"],"created":"2024-03-05T22:27:40.714+01:00","updated":"2024-03-26T18:14:13.603+01:00"}
+{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-auto-stop-script-for-sage-maker-apps-with-terraform/","tags":["AI","AI/ML","AWS","MLOps","SageMaker"],"created":"2024-06-07T17:41:41.642+02:00","updated":"2024-06-07T17:41:41.642+02:00"}
 ---
 
 
