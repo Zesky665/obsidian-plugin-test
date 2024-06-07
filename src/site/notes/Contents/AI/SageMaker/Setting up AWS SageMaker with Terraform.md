@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-aws-sage-maker-with-terraform/","tags":["AI/ML","IaC","MLOps","Terraform","AWS","SageMaker"],"created":"2024-02-29T00:11:43.027+01:00","updated":"2024-03-07T01:09:36.627+01:00"}
+{"dg-publish":true,"permalink":"/contents/ai/sage-maker/setting-up-aws-sage-maker-with-terraform/","tags":["AI/ML","IaC","MLOps","Terraform","AWS","SageMaker"],"created":"2024-06-07T17:41:41.641+02:00","updated":"2024-06-07T17:41:41.642+02:00"}
 ---
 
 
